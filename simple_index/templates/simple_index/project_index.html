@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    <meta name="pypi:repository-version" content="1.0">
+{% endblock %}
+
+{% block content %}
+    {% for project in projects %}
+        <a href="{{ project.get_absolute_url }}">{{ project }}</a><br/>
+    {% endfor %}
+{% endblock %}

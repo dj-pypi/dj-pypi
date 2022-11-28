@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    <meta name="pypi:repository-version" content="1.0">
+{% endblock %}
+
+{% block content %}
+    {% for package in packages %}
+        <a href="{{ package.get_absolute_url }}#sha256={{ package.sha256_digest }}">{{ package.content_filename }}</a><br/>
+    {% endfor %}
+{% endblock %}

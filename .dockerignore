@@ -1,0 +1,17 @@
+.git/
+.idea/
+.vscode/
+
+*.pyc
+__pycache__
+
+/data/
+/static/
+/media/
+*.sqlite3
+
+*.egg-info/
+.mypy_cache/
+.tox/
+.venv/
+dist/
